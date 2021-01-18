@@ -15,4 +15,8 @@ router
     .get(hotelController_1.getSingleHotel)
     .put(hotelController_1.updateHotel)
     .delete(hotelController_1.deleteHotel);
+router
+    .route('/:id/reviews')
+    .post(hotelController_1.addReview)
+    .get(hotelController_1.getSingleReviews);
 exports.default = router;
